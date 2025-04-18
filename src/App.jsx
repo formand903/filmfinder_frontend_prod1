@@ -101,7 +101,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetchMovies(page);
+    fetch("/api/proxy/tmdb?page=1");
   }, [page]);
 
   const nextMovie = () => {
